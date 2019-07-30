@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+
+<head th:replace="fragments/headers :: head(title='Welcome page')"></head>
+
+<body>
+	<div th:replace="fragments/navbar :: nav"></div>
+
+	<div id="carousel-2" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000000000">
+
+		<div class="carousel-inner" role="listbox">
+
+			<div class="carousel-item active">
+				<img src="https://lh3.googleusercontent.com/D_uYTuSYDIC7h4k45fmhU8i_sZWLpfZI6Z84-RytPKHrdxA07yhTGOc3GdN2yZgvEa5-B00lSGaQrZXPc-1gMvpan2LXFE_PBpuTtx3oQLNcJ-_GJ8VmgysJZlu2hCIEy3KNgEXP0aByvTmV3uCGR3QG1u6hMXHwhxk7tyukelwTUxCbreKgrZ92K21LYuBgwijy4KTN0IKEsiQt63Pvppjize--N4CfFFf_zeaKM744JBbZtq6O83FavWzwJl_ev9GjccQdqQdct-CP3_APV-SiFW52uFvf4XTW86yWR_KCFZLW-elxMORlGaevtgqZ3uCJDj8p4ClU1JRKTwPIeHoK89NqCGt1MB8iLXx_mm3Zj7hS0ImWj8Jh2_OD0z6VSet9GhRfHvPgWAf0kFFRFXhXYZ1LVn9J5dhukudLLvWEMcOz1rM-KRbCv0NiszQEONoyT4dBQgC_t0HY91z9Pwz8v8Qj9S9Wr9MXcHysB8LcQHqw7Ejo_Gx7XftrS7Utk6Z_Wtk3MoDx9luSeGpTWsscuPJzERYXdL3FNGRgNts2y8gnAG6hsIh6ksvqp8kybGyLcf4ROwMharIn4ojEY5fcuhwiONuEz9xhdQTpGW889QOfbtXQo0vGD6YlfsKmTj3jPXtWL-Wvf-f4hWRbVY4-mwEjcWVUG6c0XZ93aUF10vaTonSAYpBspHTVdMJM_ExSuuIAAOOYzCJtHJ37KskM=w657-h263-no" alt="responsive image" class="d-block img-fluid">
+				<div class="carousel-caption justify-content-center align-items-center">
+					<div>
+						<a th:href="@{/game(lang=EE)}" class="btn btn-lg btn-outline-secondary">LEARN ESTONIAN</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="carousel-item">
+				<img src="https://lh3.googleusercontent.com/1gTbG2D7QyEE1O65QwQ25qHhot1Tdnr4wWmeFjJ_YpC1fRiMmfZHh-q5hIN7Dd-b746ZyOH3g9nSqUnsmXj_VFOgxoFMthXwDByDORQkP9FASswy77Z9ud7OpsJDkm7fMlbJaOAJks-EjHnDYkuWNHU4IhpElri4UQBgnFiXR8MksizhPBHqw0eYcY2sBGaDipirwmnXGxjwTsJsTUknZcGhbcEMMxqdevXisDnd-Y_6A0-jEE48ZGABWQGlnQeTZYrBOswq_97s2Klb9qbUEmULeelPGe-otZrhIf7rOmF5Dm9NLiwhbxQPiZazReAw1eWyzkyifeyHrFyXnTyHv4RSM1YCAemZtqtNeEIom6UzTeHYb3l6J6shoOceOpfZiGiTZ5bFjMIY7M0DbnbRPXt_VZpfqtpxxA8i4JB37raSK5ze1Xf5n3xgvwGUyfVkY0mJLhqm3FWeOXuMriWWmotT_HqMmRRkLEpgOqtLcJdCWzWLUIT3vh9pABKPBIg-TT55vrVJKODYGU42SoQ29mqk-B9byzGvWJMOSxOgYgUu8n06h36reTmFziaXUcajwC0_nMnrwlCocI3EbjxShLhIvsmoqCqQJ9YwovQxYYGIovMhX1DAYST8EnnLBmbERcXWX6mVtcKzf2t3-5nZZhvFAsIn8T83Cwp52tb4cuPs8skCUa_LLT4icyObFi-idTXiDyW8VxYYzAJifFnX6wYE=w1366-h547-no" alt="responsive image" class="d-block img-fluid">
+				<div class="carousel-caption justify-content-center align-items-center">
+					<div>
+						<a th:href="@{/game(lang=LV)}" class="btn btn-lg btn-outline-secondary">LEARN LATVIAN</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- /.carousel-inner -->
+		<a class="carousel-control-prev" href="#carousel-2" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carousel-2" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+
+</body>
+</html>
